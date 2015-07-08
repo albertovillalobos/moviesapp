@@ -98,12 +98,12 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    margin: 5,
   },
   thumbnail: {
     width: 80,
     height: 80,
-    borderRadius: 40,
-    padding: 10,
+    borderRadius: 10,
   },
   welcome: {
     fontSize: 20,
