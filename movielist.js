@@ -117,12 +117,12 @@ var moviescreen  = React.createClass({
     var movie=this.props.movie;
     return (
       <ScrollView>
-        <View>
+        <View style={styles.moviescreen}>
           <Image
             source={{uri: movie.posters.thumbnail}}
             style={styles.thumbnail}
           />
-          <Text>{movie.posters.original}</Text>
+          <Text>{movie.title}</Text>
 
         </View>
       </ScrollView>
@@ -207,6 +207,11 @@ var styles = StyleSheet.create({
     paddingTop: 20,
     backgroundColor: '#F5FCFF',
   },
+  moviescreen: {
+    flex: 1,
+    alignItems: 'center',
+    margin: 20,
+  }
 
 
 });
